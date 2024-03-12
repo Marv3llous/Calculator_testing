@@ -65,12 +65,20 @@ test('can multiply two large positve numbers together', () => {
   actual = multiply(12,12);
   expect(actual).toBe(expected);
 });
-
-
 });
 
 describe('divide', () => {
+test('can divide two whole numbers by each other', () =>{
+  expected = 3;
+  actual = divide(9,3);
+  expect(actual).toBe(expected);
+})
 
+test('can divide two large numbers by each other', () =>{
+  expected = 65;
+  actual = divide(2860,44);
+  expect(actual).toBe(expected);
+})
 });
 
 describe('modulus', () => {
