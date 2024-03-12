@@ -29,7 +29,7 @@ describe('sum', () => {
   });
 
   test('can add zero', () => {
-    expected = 4
+    expected = 4;
     actual = sum(4,0);
     expect(actual).toBe(expected);
   });
@@ -40,22 +40,32 @@ describe('sum', () => {
 describe('subtract', () => {
 
 test('can subtract two small positive numbers', () =>{
-  expected = 5
+  expected = 5;
   actual = subtract(9,4);
   expect(actual).toBe(expected);
 });
 
 test('can subtract a negative number from a positive number', () =>{
-  expected = 13
+  expected = 13;
   actual = subtract(9,-4);
   expect(actual).toBe(expected);
 });
-
-
-
 }) 
 
 describe('multiply', () => {
+
+test('can multiply two positve numbers together', () => {
+  expected = 30;
+  actual = multiply(6,5);
+  expect(actual).toBe(expected);
+});
+
+test('can multiply two large positve numbers together', () => {
+  expected = 144;
+  actual = multiply(12,12);
+  expect(actual).toBe(expected);
+});
+
 
 });
 
