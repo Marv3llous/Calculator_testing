@@ -110,5 +110,16 @@ test('can divide a large number by two with no remainder to prove a number is ev
 });
 
 describe('odd', () => {
+  test('can divide by 2 with a remainder to prove a number is odd', () =>{
+    expected = true
+    actual = odd(9);
+    expect(actual).toBe(expected);
+  })
+  test('can divide a large number by two with a remainder to prove a number is odd', () =>{
+    expected = true
+    actual = odd(2461);
+    expect(actual).toBe(expected);
+  });
+
 
 });
