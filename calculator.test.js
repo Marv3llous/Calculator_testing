@@ -97,7 +97,16 @@ test('can find the remainder when dividing two large numbers by each other', () 
 });
 
 describe('even', () => {
-
+test('can divide by 2 with no remainder to prove a number is even', () =>{
+  expected = true
+  actual = even(10);
+  expect(actual).toBe(expected);
+})
+test('can divide a large number by two with no remainder to prove a number is even', () =>{
+  expected = true
+  actual = even(24600);
+  expect(actual).toBe(expected);
+});
 });
 
 describe('odd', () => {
