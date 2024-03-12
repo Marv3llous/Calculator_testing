@@ -83,6 +83,17 @@ test('can divide two large numbers by each other', () =>{
 
 describe('modulus', () => {
 
+test('can find the remainder when dividing two numbers by each other', () =>{
+  expected = 1
+  actual = modulus(7,2);
+  expect(actual).toBe(expected);
+})
+
+test('can find the remainder when dividing two large numbers by each other', () =>{
+  expected = 1
+  actual = modulus(100,3);
+  expect(actual).toBe(expected);
+})
 });
 
 describe('even', () => {
